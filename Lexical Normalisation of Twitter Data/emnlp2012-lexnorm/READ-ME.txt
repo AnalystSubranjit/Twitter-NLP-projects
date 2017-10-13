@@ -1,0 +1,72 @@
+============================================================================
+    Text Normalization Data Set v1.0
+
+    Copyright (C) 2012
+    Computer Science Department, The University of Texas at Dallas
+=============================================================================
+
+1. Copyright Notice
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+2. Data Format
+   
+    The text normalization data set contains 3802 nonstandard tokens 
+    along with their human-annotated normalized word forms. 
+    The nonstandard tokens were collected from a corpus with about 
+    6150 tweets. These tweets were manually normalized by the Amazon 
+    Mechanical Turk annotators at the sentence level. 
+    Note that the annotation results may be subject to the turkers' 
+    understanding of the social media language. 
+    Please refer to the following publication (1) for annotation details.
+
+    Each line of the data file is in the following format:
+    
+    freq \t token | norm_word_1 | norm_word_2 ...
+
+    The first column ("freq") represents the frequency of the nonstandard 
+    token in the tweet corpus; the second column ("token") is the 
+    nonstandard token that needs to be normalized; and the rest columns 
+    contain one or more normalized word forms. 
+  
+
+3. If you find this data set helpful, please cite the following papers:
+
+    (1) Fei Liu, Fuliang Weng, Bingqing Wang, Yang Liu. Insertion, Deletion,
+    or Substitution? Normalizing Text Messages without Pre-categorization
+    nor Supervision. In Proceedings of the 49th Annual Meeting of the 
+    Association for Computational Linguistics (ACL 2011), short paper, 
+    pages 71-76.
+
+    (2) Fei Liu, Fuliang Weng, Xiao Jiang. A Broad-Coverage Normalization
+    System for Social Media Language. In Proceedings of the 50th Annual
+    Meeting of the Association for Computational Linguistics (ACL 2012), 
+    pages 1035-1044.
+
+
+4. Acknowledgments
+
+    We would like to thank the group members in the Speech and Language 
+	Processing Lab in the Computer Science Department at the University
+	of Texas at Dallas for useful discussions.
+
+
+For any questions and comments, please email feiliu@hlt.utdallas.edu
+
+
+
+
+
+
