@@ -260,56 +260,21 @@ dev_se = pd.DataFrame(dev_se, columns = se)
 test_se = pd.DataFrame(test_se, columns = se)
 
 
-
-#%%
-f = open("out.txt",'r')
-a = []
-for line in f:
-    a.append(line.split(',')[2][2])
-
-a = a[1:]
-f.close()
-#%%
-f = open("test.txt",'r',encoding='utf-8')
-b = []
-for line in f:
-    b.append(line.split()[0])
-f.close()
-
-#%%
-f = open("pred.txt",'w+')
-f.write("ID,Category\n")
-for x,y in zip(b,a):
-    f.write(x+","+y+"\n")
-f.close()
-
-#%%
-f = open('dev.arff','r',encoding = 'utf-8')
-test = []
-for line in f:
-    test.append(line.strip())
-f.close()
-test = [(x[:18], x[-1]) for x in test[96:]]
-
-f = open('test.txt','w+',encoding = 'utf-8')
-f.write("Tweet ID, Class(Y/N)"+"\n")
-for x in test:
-    f.write(x[0]+"  "+x[1]+"\n")
-f.close()
-
-
-#%%
-f = open("pred.txt",'r')
-a = []
-for line in f:
-    a.append(line.split(','))
-f.close()
-a = a[1:]
-a = [x[1] for x in a]
-
-
-#%%
-f = open("out.txt",'w+')
-for x in test:
-    f.writelines(x)
-f.close()
+# f = open("pred.txt",'w+')
+# f.write("ID,Category\n")
+# for x,y in zip(b,a):
+#     f.write(x+","+y+"\n")
+# f.close()
+#
+# f = open('dev.arff','r',encoding = 'utf-8')
+# test = []
+# for line in f:
+#     test.append(line.strip())
+# f.close()
+# test = [(x[:18], x[-1]) for x in test[96:]]
+#
+# f = open('dev.txt','w+',encoding = 'utf-8')
+# f.write("Tweet ID, Class(Y/N)"+"\n")
+# for x in test:
+#     f.write(x[0]+"  "+x[1]+"\n")
+# f.close()
