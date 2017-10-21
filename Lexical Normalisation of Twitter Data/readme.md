@@ -37,6 +37,6 @@ Where "Token" is drawn from the tweet text (suitably down-cased), "Canonical_For
     >NO - "not a normalisation candidate", such that the token was not
     >considered in the normalisation process.
     
-- `unlabelled-tokens.txt` has the form:
-  `Token ???`      
+- `unlabelled-tokens.txt` has the form:  
+  `Token ???`        
 The "code" and "canonical form" are not given. 
