@@ -1,3 +1,9 @@
+### Identifying Tweets with Adverse Drug Reactions Using Text Classification
+
+- Definition of [Adverse drug reaction](https://en.wikipedia.org/wiki/Adverse_drug_reaction)
+- A nice intro to [Text Classification](http://www.nltk.org/book/ch06.html)
+- source of the [data set](http://diego.asu.edu/downloads/twitter_annotated_corpus/)
+
 There are three sub-directories --- train, dev, and test --- each containing a .txt file and a .arff file:
 
  - The .txt file contains the raw tweets, with the following format:
