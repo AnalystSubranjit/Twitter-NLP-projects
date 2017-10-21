@@ -65,7 +65,7 @@ f3.close()
 #%% Tokenizing
 train = [tknzr.tokenize(x) for x in train]
 dev = [tknzr.tokenize(x) for x in dev]
-test = [tknzr.tokenize(x) for x in test] 
+test = [tknzr.tokenize(x) for x in test]
 
 #%% Stemming
 train = [[stemmer.stem(word) for word in words] for words in train]
@@ -86,13 +86,13 @@ test_csv.to_csv('test_new.csv', sep=',', encoding='utf-8', index=False)
 def bigrams(tags):
     bigram = []
     for tag in tags:
-        bigram.append([tuple(x) for x in TextBlob(tag).ngrams(n = 2)])     
+        bigram.append([tuple(x) for x in TextBlob(tag).ngrams(n = 2)])
     return bigram
 
 def trigrams(tags):
     trigram = []
     for tag in tags:
-        trigram.append([tuple(x) for x in TextBlob(tag).ngrams(n = 3)])     
+        trigram.append([tuple(x) for x in TextBlob(tag).ngrams(n = 3)])
     return trigram
 
 
@@ -149,7 +149,7 @@ def count_gram(tweets, allgram):
             count.append(tweet.count(gram))
         counts.append(count)
     return pd.DataFrame(counts, columns = [x[0] + x[1] + x[2] for x in trigram_all])
-        
+
 train_tags = count_gram(train_tags, trigram_all)
 dev_tags = count_gram(dev_tags, trigram_all)
 test_tags = count_gram(test_tags, trigram_all)
@@ -161,7 +161,7 @@ def parse_drug(drug):
     f = open('drug.txt','r')
     for line in f:
         drug.append(line.strip())
-    return 
+    return
 parse_drug(drug)
 drug = list(set(drug) - set(list(train_csv.columns)))
 
@@ -217,7 +217,7 @@ se = readf()
 se = list(set(se) - set(list(train_csv.columns)))
 
 
-#%% remove symbols 
+#%% remove symbols
 def Textcleaner(tweets):
     cleaned = [re.sub(r'\W+', ' ', x).strip().lower() for x in tweets]
     return cleaned
@@ -266,7 +266,7 @@ f = open("out.txt",'r')
 a = []
 for line in f:
     a.append(line.split(',')[2][2])
-    
+
 a = a[1:]
 f.close()
 #%%
@@ -288,8 +288,11 @@ f = open('test.arff','r',encoding = 'utf-8')
 test = []
 for line in f:
     test.append(line.strip())
-    
+
 f.close()
+test
+
+
 #%%
 f = open("pred.txt",'r')
 a = []
@@ -297,7 +300,7 @@ for line in f:
     a.append(line.split(','))
 f.close()
 a = a[1:]
-a = [x[1] for x in a]    
+a = [x[1] for x in a]
 
 
 #%%
