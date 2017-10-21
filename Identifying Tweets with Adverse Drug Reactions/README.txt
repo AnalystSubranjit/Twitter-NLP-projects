@@ -1,5 +1,3 @@
-This file describes the data files for COMP90049 Project 2, 2017S2.
-
 There are three sub-directories --- train, dev, and test --- each containing a .txt file and a .arff file:
 
  - The .txt file contains the raw tweets, with the following format:
@@ -16,14 +14,4 @@ There are three sub-directories --- train, dev, and test --- each containing a .
        the possible attribute values in braces {}. (The Class is conventionally the final-listed attribute.)
      One @DATA line, indicating that the following lines are the instances in CSV.
 
-	 	 
-	 
-Observe that the "Correctly Classified Instances", based on the dataset without the ID attribute, are 881 (81.9%). 
-This is actually (very slightly) worse than before! 
-You might like to ask which instances are being classified incorrectly now, which were correct before, and think about why that might have happened.
-Or, there might be some instances that were incorrect before, but are correct now (and why?).
-
-- Did Naive Bayes classify the data well? Why or why not?
-- Was it more effective on the "Y" class or the "N" class? Why? What does that mean?
-- What are the useful attributes? What are the useless attributes? Is there some combination of attributes that works particularly well? Why or why not?
-- What other attributes might be helpful here?
+	 	
