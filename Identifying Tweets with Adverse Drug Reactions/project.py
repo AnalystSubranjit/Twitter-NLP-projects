@@ -284,13 +284,18 @@ for x,y in zip(b,a):
 f.close()
 
 #%%
-f = open('test.arff','r',encoding = 'utf-8')
+f = open('dev.arff','r',encoding = 'utf-8')
 test = []
 for line in f:
     test.append(line.strip())
-
 f.close()
-test
+test = [(x[:18], x[-1]) for x in test[96:]]
+
+f = open('test.txt','w+',encoding = 'utf-8')
+f.write("Tweet ID, Class(Y/N)"+"\n")
+for x in test:
+    f.write(x[0]+"  "+x[1]+"\n")
+f.close()
 
 
 #%%
