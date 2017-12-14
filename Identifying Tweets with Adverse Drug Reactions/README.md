@@ -1,4 +1,4 @@
-### Identifying Tweets with Adverse Drug Reactions Using Text Classification
+# Identifying Tweets with Adverse Drug Reactions Using Text Classification
 
 - Definition of [Adverse Drug Reaction](https://en.wikipedia.org/wiki/Adverse_drug_reaction)
 - A nice intro to [Text Classification](http://www.nltk.org/book/ch06.html) using Python NLTK
