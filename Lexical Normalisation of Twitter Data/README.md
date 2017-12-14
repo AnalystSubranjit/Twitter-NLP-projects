@@ -39,3 +39,7 @@ Where `Token` is drawn from the tweet text (suitably down-cased), `Canonical_For
 >`Token` `???`  
 
 where `Code` and `Canonical_Form` are omitted and it is used as test data only
+
+# Credits
+- The project is from the course **Knowledge Technologies (COMP90049)** offered at University of Melbourne
+- Thanks to [Mr Jeremy Nicholson](http://www.cis.unimelb.edu.au/people/staff.php?person_ID=99799) for his dedicated and inspiring tutoring efforts and for providing the project specification 
