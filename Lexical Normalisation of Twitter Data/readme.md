@@ -1,4 +1,4 @@
-### Lexical Normalisation of Twitter Data
+# Lexical Normalisation of Twitter Data
 
 - Definition of [Text Normalization](https://en.wikipedia.org/wiki/Text_normalization), [Approximate String Matching
 ](https://en.wikipedia.org/wiki/Approximate_string_matching), [Edit Distance](https://en.wikipedia.org/wiki/Edit_distance) and [Levenshtein Distance](https://en.wikipedia.org/wiki/Levenshtein_distance) from Wikipedia
@@ -38,5 +38,7 @@ Where "Token" is drawn from the tweet text (suitably down-cased), "Canonical_For
     >considered in the normalisation process.
     
 - `unlabelled-tokens.txt` has the form:  
-  `Token ???`        
-The "code" and "canonical form" are not given. 
+
+  > Token TAB ???        
+
+which are potential candidates for canonicalization
