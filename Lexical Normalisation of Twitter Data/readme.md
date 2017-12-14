@@ -19,11 +19,12 @@
     System for Social Media Language. In Proceedings of the 50th Annual
     Meeting of the Association for Computational Linguistics (ACL 2012), 
     pages 1035-1044.
-- `{labelled, unlabelled}-tokens.txt`:  
+    
+`{labelled, unlabelled}-tokens.txt`:  
 
 A list of tokens, one per line. The tokens are drawn from real tweets, excepts that tokens not containing at least one (English) alphabetical character - like "." or "!!" - have been excluded.  
 
-- `labelled-tokens.txt` has the form:  
+`labelled-tokens.txt` has the form:  
 
   `Token` `Code`  `Canonical_Form`  
   
@@ -33,7 +34,7 @@ Where `Token` is drawn from the tweet text (suitably down-cased), `Canonical_For
   + **OOV**: "out of vocabulary", such that the form of the token from the tweet was not found in the `dict.txt`, and thus the token was a candidate for normalisation. In some cases, the canonical form is homologous (equivalent) to the un-normalised form. In other cases, they are different --- these are the "spelling mistakes" that need to be "corrected".
   + **NO**: "not a normalisation candidate", such that the token was not considered in the normalisation process.
     
-- `unlabelled-tokens.txt` has the form:    
+`unlabelled-tokens.txt` has the form:    
 
 `Token` `???`  
 
