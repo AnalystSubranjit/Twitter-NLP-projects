@@ -22,9 +22,10 @@
 - `{labelled, unlabelled}-tokens.txt`:     
 A list of tokens, one per line. The tokens are drawn from real tweets, excepts that tokens not containing at least one (English) alphabetical character - like "." or "!!" - have been excluded.
 - `labelled-tokens.txt` has the form:  
-  >Token Code Canonical_Form  
+
+  `Token` `Code`  `Canonical_Form`  
   
-Where "Token" is drawn from the tweet text (suitably down-cased), "Canonical_Form" is the normalised version of the token, and "Code" can take one of three values: 
+Where `Token` is drawn from the tweet text (suitably down-cased), `Canonical_Form` is the normalised version of the token, and `Code` can take one of three values: 
     
   - IV - "in vocabulary", such that the form from the tweet was found in the `dict.txt`, and is consequently not a candidate for normalisation.
     
@@ -33,7 +34,6 @@ Where "Token" is drawn from the tweet text (suitably down-cased), "Canonical_For
   - NO - "not a normalisation candidate", such that the token was not considered in the normalisation process.
     
 - `unlabelled-tokens.txt` has the form:  
+`Token` `???`
+where `Code` and `Canonical_Form` are omitted 
 
-  > Token TAB ???        
-
-which are potential candidates for canonicalization
