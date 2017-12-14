@@ -26,7 +26,7 @@ A list of tokens, one per line. The tokens are drawn from real tweets, excepts t
 
 **`labelled-tokens.txt`** has the form:  
 
-  `Token` `Code`  `Canonical_Form`  
+>  `Token` `Code`  `Canonical_Form`  
   
 Where `Token` is drawn from the tweet text (suitably down-cased), `Canonical_Form` is the normalised version of the token, and `Code` can take one of three values: 
     
@@ -36,6 +36,6 @@ Where `Token` is drawn from the tweet text (suitably down-cased), `Canonical_For
     
 **`unlabelled-tokens.txt`** has the form:    
 
-`Token` `???`  
+>`Token` `???`  
 
 where `Code` and `Canonical_Form` are omitted and it is used as test data only
